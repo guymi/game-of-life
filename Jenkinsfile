@@ -7,6 +7,7 @@ pipeline {
   stages {
     stage('') {
       steps {
+        sh 'env'
         sh 'echo hello'
       }
     }
