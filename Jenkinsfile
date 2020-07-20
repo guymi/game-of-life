@@ -2,7 +2,7 @@ pipeline {
   agent {
     node {
         label 'dfi-mac'
-        customWorkspace '/var/jenkins-slave/workspace/game-of-life'
+        customWorkspace "`dirname $WORKSPACE`/`dirname $JOB_NAME`"
     }
   }
   stages {
